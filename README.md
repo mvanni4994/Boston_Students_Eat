@@ -22,8 +22,7 @@ We are NYC students studying hard and looking for a top-rated value restaurant t
 
 
 ## API Reference ##
-Google Maps: 
-Yelp: 
+Zomato API Key: 19770ef1d81d900e465460e5b29f22bb
 
 ## Credits ##
 Lindsey Bowen, Margaret Elson, Nicholas Jazgunovich, Matt Vanni 
