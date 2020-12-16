@@ -2,22 +2,31 @@
 Ratings application that shows local restaurants using google maps api within a 10 mile radius in NYC.
 How we stand out: Intuitive UI that is easily accessible compared to other applications.
 
-# Motivation
+## Motivation ##
 
-We are NYC students who want to find top-rated value restaurants within our area.  
+We are NYC students studying hard and looking for a top-rated value restaurant to take a break and enjoy some food and drinks.  
 
-# Code Style 
+## Code Style ##
 
-# Screenshots
 
-# Framework Used 
+## Screenshots ##
 
-# Features 
 
-# Code Example 
+## Framework Used ##
+* Bulma 
 
-# Installation 
+## Features ##
 
-# API Reference 
+
+## Code Example ##
+
+
+## API Reference ##
+Google Maps: 
+Yelp: 
+
+## Credits ##
+Lindsey Bowen, Margaret Elson, Nicholas Jazgunovich, Matt Vanni 
+
 
 
