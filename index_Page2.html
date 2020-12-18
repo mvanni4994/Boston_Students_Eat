@@ -8,13 +8,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="hero is-primary">
-        <div class="hero-body">
-          <div class="container">
-            <h2 style ="text-align: center;" class= title>
-              NY College Eats
-            </h2>
+    <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="">
+          <!-- Link to page 1 -->
+            <h1>
+                <strong> NY College Eats</strong>
+            </h1> 
+          </a>
+        </div>
+      </nav>
+    <div class="container">
+        <section class="section">
+                    <article class="panel is-info">
+                        <p class="panel-heading">
+                          Carry Out
+                        </p>
+                        <div class="topnav">
+                            <a class="active"></a>
+                            <div class="search-container">
+                              <form action="/action_page.php">
+                                <input type="text" placeholder="Search for Food" name="search">
+                                <button type="submit">Submit</button>
+                              </form>
+                            </div>
+                          </div>
+                    <p class="panel-tabs">
+                      <a class="panel-is-primary"><button>All</button></a>
+                      <a><button>Columbia</button></a>
+                      <a><button>Fordham</button></a>
+                      <a><button>NYU</button></a>
+                      <a><button>Pace</button></a>
+                    </p>
+                    <div class="panel-block">
+                      <button class="button is-link is-outlined is-fullwidth">
+                        Reset all filters
+                      </button>
+                    </div>
+                  </nav>
+              <div class="content">
+                <!-- Content -->
+              </div>
+            </article>
           </div>
         </div>
-      </section>
+        </section>
+    </div>
 </html>
