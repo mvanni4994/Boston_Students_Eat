@@ -3,9 +3,7 @@
     font-size: xx-large;
 
 }
-section {
-    width: 300px;
-    border: 15px solid black;
-    padding: 50px;
-    margin: 20px;
+image {
+    align-items: left;
 }
+
