@@ -3,4 +3,6 @@
     font-size: xx-large;
 
 }
-
+.parallax-container {
+    height: "500px";
+  }
