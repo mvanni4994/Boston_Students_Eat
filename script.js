@@ -8,7 +8,7 @@ var SpoonAPIKey = "a959c343de664ef3ba09e64931c18881";
 
 function takeout() {
     let input = $("#input").val()
-    var queryUrl = "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/search?entity_id=280&entity_type=city&q=" + input + "&radius=8046.72M&sort=cost&order=desc";
+    var queryUrl = "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/search?entity_id=289&entity_type=city&q=" + input + "&radius=1609.34M&sort=cost&order=desc";
     console.log(input)
     console.log(queryUrl)
     $.ajax({
@@ -21,13 +21,14 @@ function takeout() {
 
         var resContainer = $("#input-container");
         
-        var resNameUrl = response.restaurants[0].restaurant.name;
+        var resNameUrl = response.restaurants[0,1,2].restaurant.name;
         console.log(resNameUrl)
         var resName = $("#restaurant-name").text(resNameUrl);
         resContainer.append(resName);
 
         function restaurantInfo (){
-            var queryUrl2 = "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/search?entity_id=280&entity_type=city&q=" + input + "&radius=8046.72M&sort=cost&order=desc";
+            var queryUrl2 = "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/search?entity_id=289&entity_type=city&q=" + input + "&radius=1609.34M&sort=cost&order=desc";
+        
             $.ajax({
                 url: queryUrl2,
                 method: "GET",
@@ -36,16 +37,17 @@ function takeout() {
             .then(function(response){
                 console.log(response)
 
+
                 var resInfo = $("#input-info");
         
                 var resLocationUrl = response.restaurants[0].restaurant.location.address;
                 console.log(resLocationUrl)
-                var resLocation = $("#Location").text(resLocationUrl);
+                var resLocation = $("<p>").text("Address: " + resLocationUrl);
                 resInfo.append(resLocation);
 
                 var resPhoneUrl = response.restaurants[0].restaurant.phone_numbers;
                 console.log(resPhoneUrl)
-                var resPhone = $("#Phone").text(resPhoneUrl);
+                var resPhone = $("<p>").text("Restaurant Phone Number: " + resPhoneUrl);
                 resInfo.append(resPhone);
 
                 // var resPicUrl = response.restaurants[0].restaurant.photos_url;
@@ -53,18 +55,23 @@ function takeout() {
                 // var resPic = $("<img>").attr(resPicUrl);
                 // resInfo.append(resPic);
 
-                var resTimeUrl = response.restaurants[0].restaurant.timings;
-                console.log(resTimeUrl)
-                var resTime = $("#Time").text(resTimeUrl);
-                resInfo.append(resTime);
+
+                var ratingUrl = response.restaurants[0].restaurant.user_rating.aggregate_rating;
+                console.log(ratingUrl)
+                var ratingNum = $("<p>").text("Restaurant Rating: " + ratingUrl + "/10");
+                resInfo.append(ratingNum);
+
+
+                var menuUrl = response.restaurants[0].restaurant.menu_url;
+                console.log(menuUrl)
+                var menuLink = ($("<a>").attr("href", menuUrl).text("Click here for more info!"));
+                resInfo.append(menuLink);
+
+
 
             })
 
         }$("#restaurant-name").on("click", restaurantInfo)
-
-        // for (var i = 0; i < response.restaurants.length; i++){
-        //     console.log(response.restaurants.length)
-        // }
 
     })
     
