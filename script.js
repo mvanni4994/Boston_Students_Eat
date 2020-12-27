@@ -18,16 +18,13 @@ function takeout() {
     })
     .then(function(response){
         console.log(response)
+        console.log("am i working?")
 
-        var resContainer = $("#input-container");
-        
-        var resNameUrl = response.restaurants[0,1,2].restaurant.name;
-        console.log(resNameUrl)
-        var resName = $("#restaurant-name").text(resNameUrl);
-        resContainer.append(resName);
+    
 
         function restaurantInfo (){
             var queryUrl2 = "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/search?entity_id=289&entity_type=city&q=" + input + "&radius=1609.34M&sort=cost&order=desc";
+            console.log(queryUrl2);
         
             $.ajax({
                 url: queryUrl2,
@@ -37,41 +34,51 @@ function takeout() {
             .then(function(response){
                 console.log(response)
 
+                // var resInfo = $("#card-container");
+                // resInfo.html("")
+                var resInfo = $("input-info");
 
-                var resInfo = $("#input-info");
+                for (var i = 0; i < response.restaurants.length; i++) {
+                    console.log(response.restaurants[i].name);
+
+                    console.log(response);
+
+
         
-                var resLocationUrl = response.restaurants[0].restaurant.location.address;
+                var resNameUrl = response.restaurants[i].restaurant.name;
+                console.log(resNameUrl)
+                var resName = $("<h2>").text(resNameUrl);
+                resInfo.append(resName);
+
+                var resLocationUrl = response.restaurants[i].restaurant.location.address;
                 console.log(resLocationUrl)
                 var resLocation = $("<p>").text("Address: " + resLocationUrl);
                 resInfo.append(resLocation);
 
-                var resPhoneUrl = response.restaurants[0].restaurant.phone_numbers;
+                var resPhoneUrl = response.restaurants[i].restaurant.phone_numbers;
                 console.log(resPhoneUrl)
                 var resPhone = $("<p>").text("Restaurant Phone Number: " + resPhoneUrl);
                 resInfo.append(resPhone);
 
-                // var resPicUrl = response.restaurants[0].restaurant.photos_url;
-                // console.log(resPicUrl)
-                // var resPic = $("<img>").attr(resPicUrl);
-                // resInfo.append(resPic);
-
-
-                var ratingUrl = response.restaurants[0].restaurant.user_rating.aggregate_rating;
+                var ratingUrl = response.restaurants[i].restaurant.user_rating.aggregate_rating;
                 console.log(ratingUrl)
                 var ratingNum = $("<p>").text("Restaurant Rating: " + ratingUrl + "/10");
                 resInfo.append(ratingNum);
 
 
-                var menuUrl = response.restaurants[0].restaurant.menu_url;
+                var menuUrl = response.restaurants[i].restaurant.menu_url;
                 console.log(menuUrl)
-                var menuLink = ($("<a>").attr("href", menuUrl).text("Click here for more info!"));
-                resInfo.append(menuLink);
-
-
+                var menuLink = ($("<a>").attr("href", menuUrl).text("Click here for more info on the restaurant!"));
+                resInfo.append(menuLink); 
+                
+                
+            
+            
+            }
 
             })
 
-        }$("#restaurant-name").on("click", restaurantInfo)
+        }restaurantInfo();
 
     })
     
