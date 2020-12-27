@@ -34,9 +34,8 @@ function takeout() {
             .then(function(response){
                 console.log(response)
 
-                // var resInfo = $("#card-container");
-                // resInfo.html("")
-                var resInfo = $("input-info");
+                var resInfo = $("#card-container");
+                resInfo.html("")
 
                 for (var i = 0; i < response.restaurants.length; i++) {
                     console.log(response.restaurants[i].name);
