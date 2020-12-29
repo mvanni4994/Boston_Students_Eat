@@ -3,6 +3,14 @@
     font-size: xx-large;
 
 }
+.nav-wrapper {
+  background-color:lightslategray !important;
+  font-size: 14px;
+  font-weight: bold;
+}
+.findbtn{
+  background-color: black !important;
+}
 .parallax-container {
     height: "500px";
   }
