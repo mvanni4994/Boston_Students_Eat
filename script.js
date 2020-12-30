@@ -3,8 +3,23 @@ script.src = 'https://code.jquery.com/jquery-3.2.1.min.js';
 script.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild(script);
 
-var ZomAPIKey = "19770ef1d81d900e465460e5b29f22bb";
+var ZomAPIKey = "371d0b3b78605932eec94283b3ce1f93";
 var SpoonAPIKey = "a959c343de664ef3ba09e64931c18881";
+
+// function loadResults() {
+
+//     $("#results").empty();
+//     showPage();
+//     // Adds loading image animation
+//     function showPage() {
+//         $("#myDiv").html("<h3> Working on it!</h3>").show();
+//         var img = $("<img>");
+//         img.attr("src", "https://i.pinimg.com/originals/50/7e/92/507e92e1d92210aac1a7130c8757a0dd.gif");
+//         $("#myDiv").append(img);
+//     }
+// }
+
+
 
 function takeout() {
     let input = $("#input").val()
@@ -18,8 +33,6 @@ function takeout() {
     })
     .then(function(response){
         console.log(response)
-        console.log("am i working?")
-
     
 
         function restaurantInfo (){
@@ -33,42 +46,45 @@ function takeout() {
             })
             .then(function(response){
                 console.log(response)
-
-                var resInfo = $("#card-container");
-                resInfo.html("")
+              
+             
 
                 for (var i = 0; i < response.restaurants.length; i++) {
                     console.log(response.restaurants[i].name);
 
                     console.log(response);
 
+                var card = $("<div>").addClass("card");
+                $("#cardcontainer").append(card)
+                card.html("")
 
+       
         
                 var resNameUrl = response.restaurants[i].restaurant.name;
                 console.log(resNameUrl)
                 var resName = $("<h2>").text(resNameUrl);
-                resInfo.append(resName);
+                card.append(resName);
 
                 var resLocationUrl = response.restaurants[i].restaurant.location.address;
                 console.log(resLocationUrl)
                 var resLocation = $("<p>").text("Address: " + resLocationUrl);
-                resInfo.append(resLocation);
+                card.append(resLocation);
 
                 var resPhoneUrl = response.restaurants[i].restaurant.phone_numbers;
                 console.log(resPhoneUrl)
                 var resPhone = $("<p>").text("Restaurant Phone Number: " + resPhoneUrl);
-                resInfo.append(resPhone);
+                card.append(resPhone);
 
                 var ratingUrl = response.restaurants[i].restaurant.user_rating.aggregate_rating;
                 console.log(ratingUrl)
                 var ratingNum = $("<p>").text("Restaurant Rating: " + ratingUrl + "/10");
-                resInfo.append(ratingNum);
+                card.append(ratingNum);
 
 
                 var menuUrl = response.restaurants[i].restaurant.menu_url;
                 console.log(menuUrl)
                 var menuLink = ($("<a>").attr("href", menuUrl).text("Click here for more info on the restaurant!"));
-                resInfo.append(menuLink); 
+                card.append(menuLink); 
                 
                 
             
