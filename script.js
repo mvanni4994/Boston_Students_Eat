@@ -1,20 +1,6 @@
-<<<<<<< HEAD
-$(document).ready(function(){
-  $('.parallax').parallax();
-});
-
-$('.dropdown-button').dropdown('open');
-$('.dropdown-button').dropdown('close');
-
- 
-=======
 var ZomAPIKey = "19770ef1d81d900e465460e5b29f22bb";
 var SpoonAPIKey = "9baea515a18f0180bd3d0bdb1d4a4cfc";
 var Queryurl = "https://cors-anywhere.herokuapp.com/https://api.spoonacular.com/recipes/complexSearch?query=pasta"
-
-
-
-
 
 
 $(document).ready(function() {
