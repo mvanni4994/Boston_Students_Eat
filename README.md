@@ -3,7 +3,7 @@ Take out or Cooking for your self? This application will help you find a top-rat
 How we stand out: Intuitive UI that is easily accessible compared to other applications.
 
 ## Motivation ##
-We are students here to help take the guessing out of your next meal with an easy guide to local restaurants and quick, delicious recipes. 
+We are here to help take the guessing out of your next meal with an easy guide to local restaurants and quick, delicious recipes. 
 
 ## Code Style ##
 
@@ -22,7 +22,8 @@ We are students here to help take the guessing out of your next meal with an eas
 
 
 ## API Reference ##
-
+*ZomAPI
+*SpoonAPI
 
 ## Credits ##
 Lindsey Bowen, Margaret Elson, Nicholas Jazgunovich, Matt Vanni 
