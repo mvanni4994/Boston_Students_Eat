@@ -22,8 +22,8 @@ We are here to help take the guessing out of your next meal with an easy guide t
 
 
 ## API Reference ##
-*ZomAPI
-*SpoonAPI
+* ZomAPI
+* SpoonAPI
 
 ## Credits ##
 Lindsey Bowen, Margaret Elson, Nicholas Jazgunovich, Matt Vanni 
