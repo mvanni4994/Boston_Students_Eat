@@ -4,39 +4,34 @@ script.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild(script);
 
 var ZomAPIKey = "371d0b3b78605932eec94283b3ce1f93";
-var SpoonAPIKey = "a959c343de664ef3ba09e64931c18881";
-
-// function loadResults() {
-
-//     $("#results").empty();
-//     showPage();
-//     // Adds loading image animation
-//     function showPage() {
-//         $("#myDiv").html("<h3> Working on it!</h3>").show();
-//         var img = $("<img>");
-//         img.attr("src", "https://i.pinimg.com/originals/50/7e/92/507e92e1d92210aac1a7130c8757a0dd.gif");
-//         $("#myDiv").append(img);
-//     }
-// }
 
 
+
+$('#search').on("click", function showLoader() {
+    $('#animated-gif').show('#animated-gif');
+    console.log("working?")
+});
 
 function takeout() {
     let input = $("#input").val()
-    var queryUrl = "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/search?entity_id=289&entity_type=city&q=" + input + "&radius=1609.34M&sort=cost&order=desc";
+    var queryUrl = "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/search?entity_id=114559&entity_type=subzone&q=" + input + "&radius=16093.4";
     console.log(input)
     console.log(queryUrl)
+
+  
+   
+
     $.ajax({
         url: queryUrl,
         method: "GET",
         headers:{"user_key":ZomAPIKey}
     })
-    .then(function(response){
-        console.log(response)
+    .then(function(resInfo){
+        console.log(resInfo)
     
 
         function restaurantInfo (){
-            var queryUrl2 = "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/search?entity_id=289&entity_type=city&q=" + input + "&radius=1609.34M&sort=cost&order=desc";
+            var queryUrl2 = "https://cors-anywhere.herokuapp.com/https://developers.zomato.com/api/v2.1/search?entity_id=114559&entity_type=subzone&q=" + input + "&radius=16093.4";
             console.log(queryUrl2);
         
             $.ajax({
@@ -54,12 +49,16 @@ function takeout() {
 
                     console.log(response);
 
+                    $("#animated-gif").hide();
+
                 var card = $("<div>").addClass("card");
                 $("#cardcontainer").append(card)
                 card.html("")
 
        
-        
+                var cardBreak = $("<br>");
+                card.append(cardBreak);
+
                 var resNameUrl = response.restaurants[i].restaurant.name;
                 console.log(resNameUrl)
                 var resName = $("<h2>").text(resNameUrl);
@@ -85,6 +84,9 @@ function takeout() {
                 console.log(menuUrl)
                 var menuLink = ($("<a>").attr("href", menuUrl).text("Click here for more info on the restaurant!"));
                 card.append(menuLink); 
+
+                var cardBreak = $("<br>");
+                card.append(cardBreak);
                 
                 
             
