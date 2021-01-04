@@ -39,6 +39,7 @@ $(document).ready(function() {
             var Responsearray = response.hits
             for (var i = 0; i < Responsearray.length; i++) {
                 console.log(Responsearray[i].recipe.image)
+                
                     // var card = $("<div>").addClass("card")
                     // var cardImage = $('<div>').addClass("card-image")
                     // var cardFigure = $("<figure>").addClass("image  is-128x128")
@@ -63,7 +64,7 @@ $(document).ready(function() {
                                     <figure class="image is-4by3">
                                         <img src="${Responsearray[i].recipe.image}">
                                     </figure>
-                                    <p class="subtitle mt-2">The Ingridents</p>
+                                    <p class="subtitle mt-2">Ingredients</p>
                                     <ul>
                                     ${ingredients}
                                     </ul>
