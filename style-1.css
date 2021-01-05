@@ -1,0 +1,19 @@
+.container {
+    text-align: center; 
+    font-size: xx-large;
+
+}
+.nav-wrapper {
+  background-color: turquoise !important;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.parallax-container {
+    height: "500px";
+  }
+
+  .dropdown-content{
+    width: max-content !important;
+    height:auto !important;
+ }

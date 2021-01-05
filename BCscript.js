@@ -79,7 +79,6 @@ function takeout() {
                 var ratingNum = $("<p>").text("Restaurant Rating: " + ratingUrl + "/10");
                 card.append(ratingNum);
 
-
                 var menuUrl = response.restaurants[i].restaurant.menu_url;
                 console.log(menuUrl)
                 var menuLink = ($("<a>").attr("href", menuUrl).text("Click here for more info on the restaurant!"));
