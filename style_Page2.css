@@ -1,0 +1,91 @@
+#schoolName{
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    font-size: 75px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+#cardcontainer {
+    width: 70vw;
+    height: 100vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-left: 10px;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid transparent;
+}
+
+.center {
+  display: block;
+  position: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#animated-gif{
+    display: none;
+    width: 20%;
+    height: 20%;
+    margin-top: 0%;
+    left: 0;
+    top: 0;
+}
+
+#input{
+    width: 64vw;
+}
+
+#search{
+        float: right;
+        width: 20%;
+        padding: 10px;
+        background: #1ecebc;
+        color: white;
+        font-size: 17px;
+        border: 1px solid grey;
+        border-left: none; /* Prevent double borders */
+        cursor: pointer;
+        border-radius: 5px;
+      
+}
+
+
+
+html {
+  background-image: url(https://external-preview.redd.it/KV7l5SRCesx_0rFAnut3gLqEdpPRW7IfEpNC2AKybVU.jpg?auto=webp&s=f0a1c45addc3af9f44fce469e31124895e98e097);
+  height: 100vh;
+    background-size: cover;
+}
+.search-container{
+    background-color: white;
+}
+.topnav{
+    background-color: white;
+}
+
+.panel-tabs{
+    background-color: white;
+}
+
+.panel-block{
+    background-color: white;
+}
+
+a {
+    color:white;
+   }
+
+#faves{
+    float: right;
+    text-align: right;
+    
+}
+
+#boston-studs{
+    text-align: right;
+}
