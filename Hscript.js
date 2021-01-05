@@ -80,7 +80,7 @@ function takeout() {
 
                 var menuUrl = response.restaurants[i].restaurant.menu_url;
                 console.log(menuUrl)
-                var menuLink = ($("<a>").attr("href", menuUrl).text("Click here for more info on the restaurant!"));
+                var menuLink = ($("<a>").attr("href", menuUrl).text("Click here for more info on the restaurant!").addClass("link"));
                 card.append(menuLink); 
 
                 var cardBreak = $("<br>");
@@ -93,7 +93,13 @@ function takeout() {
 
             })
 
+            $("#search").on("click", function restaurantInfo(){
+                $("#cardcontainer").empty()
+                console.log("working?")
+             })
+
         }restaurantInfo();
+
 
     })
     

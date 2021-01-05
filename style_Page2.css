@@ -1,3 +1,22 @@
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.card{
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    text-align: center; 
+}
+.link{
+    color: teal;
+    font-style: italic;
+}
 #schoolName{
     color: white;
     font-weight: 100;
@@ -9,35 +28,31 @@
 #cardcontainer {
     width: 70vw;
     height: 100vh;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    
+   
+  
     margin-left: auto;
     margin-right: auto;
-    padding-top: 5px;
-    padding-left: 10px;
-    text-align: center;
-    border-radius: 25px;
-    border: 1px solid transparent;
 }
-
 .center {
-  display: block;
-  position: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 #animated-gif{
     display: none;
-    width: 20%;
-    height: 20%;
-    margin-top: 0%;
-    left: 0;
-    top: 0;
+    width: 300px;
+    height: 200px;
+ 
 }
 
 #input{
-    width: 64vw;
+    width: 65vw;
+    margin-bottom: 0;
 }
 
 #search{
