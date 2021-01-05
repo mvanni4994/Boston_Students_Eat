@@ -93,7 +93,13 @@ function takeout() {
 
             })
 
+            $("#search").on("click", function restaurantInfo(){
+                $("#cardcontainer").empty()
+                console.log("working?")
+             })
+
         }restaurantInfo();
+
 
     })
     

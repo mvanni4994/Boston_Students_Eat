@@ -7,8 +7,9 @@ var ZomAPIKey = "371d0b3b78605932eec94283b3ce1f93";
 
 $('#search').on("click", function showLoader() {
     $('#animated-gif').show('#animated-gif');
-    console.log("working?")
 });
+
+
 
 function takeout() {
     let input = $("#input").val()
@@ -39,7 +40,6 @@ function takeout() {
             .then(function(response){
                 console.log(response)
               
-             
 
                 for (var i = 0; i < response.restaurants.length; i++) {
                     console.log(response.restaurants[i].name);
@@ -52,7 +52,6 @@ function takeout() {
                 $("#cardcontainer").append(card)
                 card.html("")
 
-       
                 var cardBreak = $("<br>");
                 card.append(cardBreak);
 
@@ -91,6 +90,11 @@ function takeout() {
             }
 
             })
+
+            $("#search").on("click", function restaurantInfo(){
+                $("#cardcontainer").empty()
+                console.log("working?")
+             })
 
         }restaurantInfo();
 
