@@ -17,10 +17,10 @@ A home page with two buttons, the "cooking for yourself" button will lead you to
 * SpoonAPI
 
 ## Credits ##
-Lindsey Bowen - Home page 
-Margaret Elson - Back End of the “Take Out” Page, Zomato API.
-Nicholas Jazgunovich - Back End of “Cooking for Yourself” page, Spoonacular API, and favorite recipes page. 
-Matt Vanni - HTML pages branching off of the home page and framework prototype for deployed website 
+* Lindsey Bowen - Home page utilized “Materialize” website and css for customization
+* Margaret Elson - Back End of the “Take Out” Page, Zomato API.
+* Nicholas Jazgunovich - Back End of “Cooking for Yourself” page, Spoonacular API, and favorite recipes page. 
+* Matt Vanni - HTML pages branching off of the home page utilized “Bulma” website and css for customization, and framework prototype for deployed website 
 
 
 
