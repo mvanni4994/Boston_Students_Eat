@@ -5,11 +5,6 @@ var Queryurl = "https://cors-anywhere.herokuapp.com/https://api.spoonacular.com/
 var recipes = []
     //this array comes from the api
 
-var apiRecipes = []
-
-
-
-
 $(document).ready(function() {
     $("#search-recipe").on("click", function(event) {
         event.preventDefault()
@@ -49,6 +44,7 @@ $(document).ready(function() {
 
             for (var i = 0; i < Responsearray.length; i++) {
                 console.log(Responsearray[i].recipe.image)
+                
                     // var card = $("<div>").addClass("card")
                     // var cardImage = $('<div>').addClass("card-image")
                     // var cardFigure = $("<figure>").addClass("image  is-128x128")
@@ -73,7 +69,7 @@ $(document).ready(function() {
                                     <figure class="image is-4by3">
                                         <img src="${Responsearray[i].recipe.image}">
                                     </figure>
-                                    <p class="subtitle mt-2">The Ingridents</p>
+                                    <p class="subtitle mt-2">Ingredients</p>
                                     <ul>
                                     ${ingredients}
                                     </ul>
@@ -123,6 +119,11 @@ getStorage()
 
 //function typeFood() {
 //let foodImput = $("")
-//}unction typeFood() {
-//let foodImput = $("")
-//}
+// <<<<<<< HEAD
+// //}
+// >>>>>>> 2193c5786b04a86a3754c5ebd6762c7a3ce2a8bb
+// =======
+// //}unction typeFood() {
+// //let foodImput = $("")
+// //}
+// >>>>>>> origin/nicholas

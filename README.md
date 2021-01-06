@@ -1,32 +1,29 @@
-# NY_College_Eats
-Ratings application that shows local restaurants using google maps api within a 10 mile radius of Columbia University, New York University, Fordham University, and Pace University.
-How we stand out: Intuitive UI that is easily accessible compared to other applications.
+
+## Boston Students Eat ##
+Take out or Cooking for yourself? This application will help you find a top-rated value restaurant within a 10-mile radius of Boston College, Harvard College, MIT, and Northeastern University. As, well as a variety of delicious recipes. 
 
 ## Motivation ##
+We are Boston Studetns here to help take the guessing out of your next meal with an easy guide to local restaurants and delicious recipes. 
 
-We are NYC students studying hard and looking for a top-rated value restaurant to take a break and enjoy some food and drinks.  
-
-## Code Style ##
-
-
-## Screenshots ##
-
+## This project has the following features: ##
+A home page with two buttons, the "cooking for yourself" button will lead you to another page where you can search for a variety of recipes. Just search for any food you want, and the recipes will pop up. You can also hit the save button to save your favorite recipes for later. Or if you don't feel like cooking? Click on the "taking out" button, and pick your school. Then search for any food you want and choose from a variety of restaurants within your area.  
 
 ## Framework Used ##
 * Bulma 
-
-## Features ##
-
-
-## Code Example ##
-
+* Materialize
 
 ## API Reference ##
-* Zomato API Key: 19770ef1d81d900e465460e5b29f22bb
-* Spoonacular API Key: bcbf713ed7404d57a08dc53d07322fa1
+* ZomAPI
+* SpoonAPI
 
 ## Credits ##
-Lindsey Bowen, Margaret Elson, Nicholas Jazgunovich, Matt Vanni 
+* Lindsey Bowen - Home page utilized “Materialize” website and css for customization
+* Margaret Elson - Back End of the “Take Out” Page, Zomato API.
+* Nicholas Jazgunovich - Back End of “Cooking for Yourself” page, Spoonacular API, and favorite recipes page. 
+* Matt Vanni - HTML pages branching off of the home page utilized “Bulma” website and css for customization, and framework prototype for deployed website 
+
+
+
 
 
 
