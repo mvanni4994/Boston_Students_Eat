@@ -23,7 +23,7 @@ A home page with two buttons, the "cooking for yourself" button will lead you to
 ![](images/Cooking.png)
 
 ## Power Point ##
-[TEXT TO SHOW](https://docs.google.com/presentation/d/1vDWEN2YIOpiKR0CxQk8N8AFlgB7WQkJ0aCHdCfK8t9s/edit?usp=sharing)
+[Boston Students Eat](https://docs.google.com/presentation/d/1vDWEN2YIOpiKR0CxQk8N8AFlgB7WQkJ0aCHdCfK8t9s/edit?usp=sharing)
 
 ## Credits ##
 * Lindsey Bowen - Home page utilized “Materialize” website and css for customization
