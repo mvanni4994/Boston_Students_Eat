@@ -17,7 +17,7 @@ A home page with two buttons, the "cooking for yourself" button will lead you to
 * SpoonAPI
 
 ## Screen Shots ## 
-![](images/Screen Shot 2021-01-05 at 9.52.18 PM.png)
+![](images/Screen%20Shot2021-01-05at9.52.18PM.png)
 
 ## Credits ##
 * Lindsey Bowen - Home page utilized “Materialize” website and css for customization
