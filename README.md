@@ -18,6 +18,7 @@ A home page with two buttons, the "cooking for yourself" button will lead you to
 
 ## Screen Shots ## 
 ![](images/Frontpage.png)
+! [] (images/Takeout.png)
 
 ## Credits ##
 * Lindsey Bowen - Home page utilized “Materialize” website and css for customization
