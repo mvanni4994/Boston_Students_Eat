@@ -20,7 +20,7 @@ A home page with two buttons, the "cooking for yourself" button will lead you to
 ![](images/Frontpage.png)
 ![](images/Takeout.png)
 ![](images/Cooking.png)
-![](images/Cooking.png)
+![](images/save.png)
 
 ## Power Point ##
 [Boston Students Eat](https://docs.google.com/presentation/d/1vDWEN2YIOpiKR0CxQk8N8AFlgB7WQkJ0aCHdCfK8t9s/edit?usp=sharing)
