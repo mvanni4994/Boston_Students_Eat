@@ -16,6 +16,9 @@ A home page with two buttons, the "cooking for yourself" button will lead you to
 * ZomAPI
 * SpoonAPI
 
+## Screen Shots ## 
+
+
 ## Credits ##
 * Lindsey Bowen - Home page utilized “Materialize” website and css for customization
 * Margaret Elson - Back End of the “Take Out” Page, Zomato API.
