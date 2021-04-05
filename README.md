@@ -4,6 +4,8 @@ Take out or Cooking for yourself? This application will help you find a top-rate
 
 Deployed App: https://lindseybowen.github.io/Boston_Students_Eat/
 
+Github Repository: https://github.com/mvanni4994
+
 ## Motivation ##
 We are Boston Studetns here to help take the guessing out of your next meal with an easy guide to local restaurants and delicious recipes. 
 
