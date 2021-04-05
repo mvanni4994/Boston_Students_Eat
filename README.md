@@ -2,6 +2,8 @@
 ## Boston Students Eat ##
 Take out or Cooking for yourself? This application will help you find a top-rated value restaurant within a 10-mile radius of Boston College, Harvard College, MIT, and Northeastern University. As, well as a variety of delicious recipes. 
 
+Deployed App: https://lindseybowen.github.io/Boston_Students_Eat/
+
 ## Motivation ##
 We are Boston Studetns here to help take the guessing out of your next meal with an easy guide to local restaurants and delicious recipes. 
 
